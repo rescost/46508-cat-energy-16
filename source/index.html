@@ -2,11 +2,104 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cat energy - Функциональное питание для котов</title>
   </head>
   <body>
+    <header class="site-header">
+      <a class="site-header__logo" href="#">
+        <img class="site-header__logo-img" src="http://placehold.it/191x38" alt="Кэт Энерджи - логотип" width="191" height="38">
+      </a>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+      <nav class="main-nav">
+        <button class="main-nav__button">Откыть меню</button>
+        <ul class="main-nav__list main-menu">
+          <li class="main-menu__item"><a href="index.html">Главная</a></li>
+          <li class="main-menu__item"><a href="catalog.html">Каталог продукции</a></li>
+          <li class="main-menu__item"><a href="form.html">Подбор программы</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  </body>
-</html>
+    <main class="page-main">
+      <section class="homepage-banner">
+        <h2 class="homepage-banner__title">Функциональное питание для котов</h2>
+        <div class="homepage-banner__description">Занялся собой? Займись котом!</div>
+        <img class="homepage-baaner__img" src="http://placehold.it/280x270" alt="Кэт Энерджи - логотип" width="280" height="270">
+        <a class="button homepage-banner__button">Подобрать программу</a>
+      </section>
+
+      <section class="programs">
+        <h2 class="programs__title visually-hidden">Выбор программы питания для вашего кота</h2>
+        <div class="programs-item">
+          <h3 class="programs-item__title programs-item__title--slim">Похудение</h3>
+          <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+          <a class="programs-item__link" href="catalog.html">Каталог Slim</a>
+        </div>
+        <div class="programs-item">
+          <h3 class="programs-item__title programs-item__title--fat">Набор массы</h3>
+          <p class="programs-item__description--fat">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы</p>
+          <a class="programs-item__link" href="catalog.html">Каталог Pro</a>
+        </div>
+      </section>
+
+      <section class="features">
+        <h2 class="features__title">Как это работает</h2>
+        <ul class="features__list">
+          <li class="features__item features__item--health">
+            Функциональное питание содержит только полезные питательные вещества
+          </li>
+          <li class="features__item features__item--soluble">
+            Выпускается в виде порошка, который нужно лишь залить кипятком и готово
+          </li>
+          <li class="features__item features__item--eating">
+            Замените один-два приёма обычной еду на наше функциональнео питание
+          </li>
+          <li class="features__item features__item--change">
+            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+          </li>
+        </ul>
+      </section>
+
+      <section class="promo-example">
+        <h2 class="promo-example__title">Живой пример</h2>
+        <p class="promo-exmaple__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.
+        </p>
+        <div class="promo-example__result result-indicator">
+          <span class="result-indicator__value">5 кг</span>
+          <span class="result-indicator__caption">снижение веса</span>
+        </div>
+        <div class="promo-example__result result-indicator">
+          <span class="result-indicator__value">60 дней</span>
+          <span class="result-indicator__caption">затрачено времени</span>
+        </div>
+
+
+        <div class="promo-example__cost">Затраты на питание: 15 00 руб.</div>
+        <img class="promo-example__img promo-example__img--fat" src="http://placehold.it/311x232" alt="Результаты использования функционального питания Cat Energy - Было">
+        <img class="promo-example__img promo-example__img--slim" src="http://placehold.it/311x232" alt="Результаты использования функционального питания Cat Energy - Стало">
+        <button class="button promo-example__button">Было</button>
+        <button class="button promo-example__button">Стало</button>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <section class="footer-dillers">
+        <h3 class="footer-dillers__title">Приглашаем к сотрудничеству дилеров!</h3>
+        <div class="footer-dillers__adress">ул.Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+        <div class="footer-dillers__map"> <!-- Гугл карта --> </div>
+      </section>
+
+      <section class="footer-links">
+        <h2 class="visually-hidden">Дополнительные ссылки в нижней части страницы</h2>
+        <div class="footer-links__homepage"><a href="#"><img class="footer-links__homepage-img" src="https://placehold.it/128x24" width="128" height="24" alt="Ссылка на главную страницу Cat Energy"></a></div>
+        <ul class="social-icons">
+          <li class="social-icons__item"><a href="vk.com"><img class="social-icons__item--vk" src="https://placehold.it/22x12" width="22" height="12" alt="Cat Energy вконтакте"></a></li>
+          <li class="social-icons__item"><a href="instagram.com"><img class="social-icons__item--insta" src="https://placehold.it/16x16" width="16" height="16" alt="Cat Energy в инстаграмме"></a></li>
+          <li class="social-icons__item"><a href="facebook.com"><img class="social-icons__item--fb" src="https://placehold.it/10x19" width="10" height="19" alt="Cat Energy на фейсбуке"></a></li>
+        </ul>
+        <a class="footer-links__credits" href="https://htmlacadmy.ru">HTML Academy</a> <!--Иконка, имхо, через :after -->
+      </section>
+    </footer>
+    </body>
+    </html>
