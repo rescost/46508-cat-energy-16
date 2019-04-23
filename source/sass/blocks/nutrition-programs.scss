@@ -1,0 +1,31 @@
+.nutrition-programs__item {
+  background-color: #f2f2f2;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.nutrition-programs__item:last-child {
+  margin-bottom: 30px;
+}
+
+.nutrition-programs__item-title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 37.02px;
+  font-weight: 400;
+  text-align: center;
+  margin: 0;
+}
+
+.nutrition-programs__item-description {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  font-style: normal;
+}
+
+.nutrition-programs__item-link {
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+}

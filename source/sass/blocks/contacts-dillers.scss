@@ -1,0 +1,27 @@
+.contacts-dillers {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px 20px 0 20px;
+}
+
+.contacts-dillers__title {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  text-transform: uppercase;
+  max-width: 50%;
+  margin: 0;
+}
+
+.contacts-dillers__adress {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 50%;
+}
+
+.contacts-dillers__map {
+  margin-top: 25px;
+}

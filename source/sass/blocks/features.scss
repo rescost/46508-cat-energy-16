@@ -1,0 +1,35 @@
+.features {
+  padding: 0 20px;
+}
+
+.features__title {
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+  margin: 0 0 35px 0;
+}
+
+.features__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.features__item {
+  font-family: $font-secondary;
+  font-size: 14px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.features__item:before {
+  content: "";
+  flex-shrink: 0;
+  width: 60px;
+  height: 60px;
+  margin-right: 20px;
+  background-color: $green-color;
+}

@@ -1,0 +1,25 @@
+.page-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 28px 20px 0 20px;
+  background-color: #f2f2f2;
+}
+
+.page-footer__logo {
+  text-align: center;
+  padding-bottom: 31px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.page-footer__credits-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 22px 0;
+}
+
+.page-footer__credits-copyright {
+  font-family: $font-secondary;
+  font-size: 16px;
+  line-height: 16px;
+}

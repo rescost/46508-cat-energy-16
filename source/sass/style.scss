@@ -1,9 +1,17 @@
 @import "normalize";
+@import "blocks/visually-hidden";
 @import "mixins";
 @import "variables";
 @import "blocks/page-header";
 @import "blocks/main-nav";
-
+@import "blocks/page-main";
+@import "blocks/homepage-banner";
+@import "blocks/nutrition-programs";
+@import "blocks/features";
+@import "blocks/promo-result";
+@import "blocks/contacts-dillers";
+@import "blocks/page-footer";
+@import "blocks/social-list";
 
 @font-face {
   font-family: "Oswald";
@@ -17,4 +25,31 @@
   src: url("../fonts/oswaldmedium.woff"),
     url("../fonts/oswaldmedium.woff2");
   font-weight: 500;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  font-family: $font-primary;
+  min-width: $mobile-width;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+img {
+  max-width: 100%;
 }
