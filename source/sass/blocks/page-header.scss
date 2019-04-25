@@ -6,6 +6,12 @@
   flex-direction: column;
 }
 
-.page-header__logo {
+.page-header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 320px;
+  margin: 0 auto;
   padding: 11px 20px 16px 20px;
+
 }

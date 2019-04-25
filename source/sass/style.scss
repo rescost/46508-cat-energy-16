@@ -12,19 +12,25 @@
 @import "blocks/contacts-dillers";
 @import "blocks/page-footer";
 @import "blocks/social-list";
+@import "blocks/catalog";
+@import "blocks/product-card";
+@import "blocks/catalog-more";
+@import "blocks/other-product";
+@import "blocks/other-product-card";
+@import "blocks/catalog-gift";
 
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldregular.woff"),
     url("../fonts/oswaldregular.woff2");
-  font-weight: 400;
+  font-weight: normal;
 }
 
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/oswaldmedium.woff"),
     url("../fonts/oswaldmedium.woff2");
-  font-weight: 500;
+  font-weight: bold;
 }
 
 html {
