@@ -24,13 +24,10 @@
 }
 
 .product-card__property {
+  width: 100%;
   font-family: $font-secondary;
   font-size: 12px;
   line-height: 16px;
-}
-
-.product-card__property {
-  width: 100%;
 }
 
 .product-card__property-key {
@@ -42,15 +39,15 @@
 }
 
 .product-card__button {
-    display: block;
-    width: 280px;
-    font-size: 16px;
-    line-height: 20px;
-    font-weight: normal;
-    background-color: #68b738;
-    text-transform: uppercase;
-    margin: 0 auto;
-    color: #ffffff;
-    text-align: center;
-    padding: 13px 20px;
+  display: block;
+  width: 280px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: normal;
+  background-color: #68b738;
+  text-transform: uppercase;
+  margin: 0 auto;
+  color: #ffffff;
+  text-align: center;
+  padding: 13px 20px;
 }
