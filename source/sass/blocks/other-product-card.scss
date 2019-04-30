@@ -6,7 +6,7 @@
 .other-product-card__title {
   font-weight: normal;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: $fontsize-base;
   line-height: 16px;
   color: #222222;
 }
@@ -15,7 +15,7 @@
   width: 100%;
   margin-bottom: 10px;
   font-family: $font-secondary;
-  font-size: 14px;
+  font-size: $fontsize-smaller;
   line-height: 14px;
 }
 
@@ -30,7 +30,7 @@
 .other-product-card__button {
   display: block;
   width: 280px;
-  font-size: 16px;
+  font-size: $fontsize-base;
   line-height: 20px;
   font-weight: normal;
   background-color: #68b738;

@@ -1,5 +1,5 @@
 .catalog {
-  width: 320px;
+  min-width: $screen-xs;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -15,9 +15,26 @@
 
 .catalog__title {
   font-weight: normal;
-  font-size: 36px;
+  font-size: $fontsize-title-big;
   line-height: 60px;
   padding: 30px 0;
   margin: 0;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: $screen-md) {
+
+  .catalog {
+    width: $screen-md;
+    padding: 0 30px;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+
+  .catalog {
+    width: $screen-lg;
+    padding: 0 40px;
+  }
+
 }

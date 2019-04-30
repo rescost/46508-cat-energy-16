@@ -1,16 +1,49 @@
 .page-header {
-  margin: 0 auto;
   display: flex;
   position: relative;
   flex-wrap: wrap;
   flex-direction: column;
+  margin: 0 auto;
+  min-width: $screen-xs;
 }
 
 .page-header__wrapper {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 320px;
-  margin: 0 auto;
   padding: 11px 20px 16px 20px;
+}
+
+@media screen and (min-width: $screen-md) {
+  .page-header {
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 30px 0 30px;
+  }
+
+  .page-header__wrapper {
+    padding: 0;
+  }
+
+  .page-header__logo-img {
+    width: 173px;
+    height: 58px;
+  }
+
+}
+
+@media screen and (min-width: $screen-lg) {
+  .page-header {
+    width: 1300px;
+    padding: 55px 40px 0 40px;
+  }
+
+  .page-header__logo-img {
+    width: 202px;
+    height: 59px;
+  }
+
+
 }

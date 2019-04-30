@@ -5,7 +5,7 @@
 }
 
 .features__title {
-  font-size: 36px;
+  font-size: $fontsize-title-big;
   line-height: 60px;
   font-weight: normal;
   margin: 0 0 35px 0;
@@ -19,7 +19,7 @@
 
 .features__item {
   font-family: $font-secondary;
-  font-size: 14px;
+  font-size: $fontsize-smaller;
   line-height: 18px;
   margin-bottom: 20px;
   display: flex;
@@ -32,6 +32,6 @@
     width: 60px;
     height: 60px;
     margin-right: 20px;
-    background-color: $green-color;
+    background-color: $color-additional;
   }
 }
