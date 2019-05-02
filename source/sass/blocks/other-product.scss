@@ -1,5 +1,4 @@
 .other-product {
-  width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -16,4 +15,25 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+@media screen and (min-width: $screen-md) {
+  .other-product__title {
+    border: none;
+    padding: 25px 37px;
+  }
+
+  .other-product-card {
+
+    &:first-child {
+      border-top: 1px solid #cdcdcd;
+    }
+  }
+
+}
+
+@media screen and (min-width: $screen-lg) {
+
+
+
 }

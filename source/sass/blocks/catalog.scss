@@ -28,6 +28,11 @@
     width: $screen-md;
     padding: 0 30px;
   }
+
+  .catalog__title {
+    font-size: $fontsize-tablet-title-big;
+    border-bottom: none;
+  }
 }
 
 @media screen and (min-width: $screen-lg) {

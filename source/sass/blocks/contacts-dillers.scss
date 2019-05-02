@@ -9,7 +9,6 @@
 }
 
 .contacts-dillers__description {
-  width: 320px;
   padding: 0 20px;
   display: flex;
   flex-wrap: wrap;
@@ -24,6 +23,7 @@
   text-transform: uppercase;
   max-width: 50%;
   margin: 0;
+  padding-right: 15px;
 }
 
 .contacts-dillers__adress {
@@ -36,4 +36,33 @@
 .contacts-dillers__map {
   margin: 25px 0 0 0;
   width: 100%;
+}
+
+@media screen and (min-width: $screen-md) {
+  .contacts-dillers {
+    background-color: $color-white;
+  }
+
+  .contacts-dillers__description {
+    width: 768px;
+    padding: 0 30px;
+  }
+
+  .contacts-dillers__title {
+    margin-left: 42px;
+    width: 153px;
+  }
+
+  .contacts-dillers__adress {
+    margin-right: 42px;
+    text-align: right;
+    width: 153px;
+  }
+
+}
+
+@media screen and (min-width: $screen-lg) {
+
+
+
 }

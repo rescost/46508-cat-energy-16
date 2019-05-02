@@ -20,7 +20,7 @@
       </div>
       <nav class="main-nav">
         <ul class="main-nav__list">
-          <li class="main-nav__list-item">
+          <li class="main-nav__list-item main-nav__list-item--active">
             <a class="main-nav__list-link" href="index.html">Главная</a>
           </li>
           <li class="main-nav__list-item">
@@ -37,8 +37,13 @@
         <div class="homepage-banner__wrapper">
           <h1 class="homepage-banner__title">Функциональное питание для котов</h1>
           <div class="homepage-banner__description">Занялся собой? Займись котом!</div>
-          <img class="homepage-baaner__img" src="img/index-can-mobile@1x.png" alt="Пример нашей продукции - корм с курицей" width="280" height="270">
+          <picture>
+            <source class="homepage-banner__img" media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+            <source class="homepage-banner__img" media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+            <img class="homepage-banner__img" src="img/index-can-mobile@1x.png" alt="Пример нашей продукции - корм с курицей" width="280" height="270">
+          </picture>
           <a class="button homepage-banner__button" href="#">Подобрать программу</a>
+        </div>
           <div class="homepage-banner__nutrition nutrition-programs">
             <div class="nutrition-programs__item">
               <h2 class="nutrition-programs__item-title nutrition-programs__item-title--slim">Похудение</h2>
@@ -57,16 +62,16 @@
         <h2 class="features__title">Как это работает</h2>
         <ul class="features__list">
           <li class="features__item features__item--health">
-            Функциональное питание содержит только полезные питательные вещества
+            <p class="features__item-description">Функциональное питание содержит только полезные питательные вещества</p>
           </li>
           <li class="features__item features__item--soluble">
-            Выпускается в виде порошка, который нужно лишь залить кипятком и готово
+            <p class="features__item-description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово</p>
           </li>
           <li class="features__item features__item--eating">
-            Замените один-два приёма обычной еду на наше функциональнео питание
+            <p class="features__item-description">Замените один-два приёма обычной еду на наше функциональнео питание</p>
           </li>
           <li class="features__item features__item--change">
-            Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!
+            <p class="features__item-description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
           </li>
         </ul>
       </section>
@@ -83,13 +88,14 @@
             <span class="promo-result__fact-caption">затрачено времени</span>
           </div>
           <p class="promo-result__cost">Затраты на питание: 15 00 руб.</p>
+        </div>
           <div class="promo-result__slider slider-switcher">
             <img class="slider-switcher__img slider-switcher__img-fat" src="http://placehold.it/311x232" alt="Результаты использования функционального питания Cat Energy - Было">
             <img class="slider-switcher__img slider-switcher__img-slim" src="http://placehold.it/311x232" alt="Результаты использования функционального питания Cat Energy - Стало">
             <button class="button slider-switcher__button">Было</button>
             <button class="button slider-switcher__button">Стало</button>
           </div>
-        </div>
+
       </section>
       <section class="contacts-dillers">
         <div class="contacts-dillers__description">
@@ -106,17 +112,26 @@
         <a class="page-footer__logo" href="#">
           <img class="page-footer__logo-catenergy" src="img/logo-footer.svg" alt="Логотип Кэт Энерджи" width="128" height="24">
         </a>
-        <ul class="page-footer__social-links social-list">
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--vk" href="vk.com">Вконтакте</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--insta" href="instagram.com">Инстаграмм</a>
-          </li>
-          <li class="social-list__item">
-            <a class="social-list__link social-list__link--fb" href="facebook.com">Фейсбук</a>
-          </li>
-        </ul>
+
+        <div class="page-footer__social-links">
+          <ul class="social-list">
+            <li class="social-list__item">
+              <a class="social-list__link" href="vk.com">
+                <img class="social-list__link--vk" src="img/icon-vk-mobile.svg" width="22" height="12" alt="Мы вконтакте">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="instagram.com">
+                <img class= "social-list__link--insta" src="img/icon-insta-mobile.svg" width="16" height="16" alt="Мы в инстаграмм">
+              </a>
+            </li>
+            <li class="social-list__item">
+              <a class="social-list__link" href="facebook.com">
+                <img class="social-list__link--fb" src="img/icon-fb-mobile.svg" width="10" height="19" alt="Мы в фейсбуке">
+              </a>
+            </li>
+          </ul>
+        </div>
         <div class="page-footer__credits-wrapper">
           <a class="page-footer__credits-copyright" href="https://htmlacadmy.ru">HTML Academy</a>
           <a class="page-footer__credits-logo" href="https://htmlacadmy.ru" aria-label="Ссылка на HTML Academy">

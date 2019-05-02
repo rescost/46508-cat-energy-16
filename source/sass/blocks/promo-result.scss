@@ -4,7 +4,6 @@
 }
 
 .promo-result__wrapper {
-  width: 320px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -20,7 +19,7 @@
   font-family: $font-secondary;
   font-size: $fontsize-smaller;
   line-height: 18px;
-  font-weight: regular;
+  font-weight: normal;
 }
 
 .promo-result__fact-value {
@@ -39,4 +38,47 @@
   text-align: center;
   font-size: $fontsize-smaller;
   line-height: 20px;
+}
+
+.promo-result__slider {
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: $screen-md) {
+  .promo-result {
+    background-color: $color-white;
+  }
+
+  .promo-result__wrapper {
+    width: 769px;
+    padding: 0 30px;
+  }
+
+  .promo-result__slider {
+    background-color: $gray-light;
+    padding: 0 30px;
+  }
+
+  .promo-result__description {
+    margin: 0 0 50px 0;
+  }
+
+}
+
+@media screen and (min-width: $screen-lg) {
+  .promo-result {
+    background-color: $gray-light;
+  }
+
+  .promo-result__wrapper {
+    width:  $screen-lg;
+    padding:  0 40px;
+  }
+
+  .promo-result__slider {
+    width:  $screen-lg;
+    padding:  0 40px;
+  }
+
 }

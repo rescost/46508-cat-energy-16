@@ -14,10 +14,6 @@
 .main-nav__list-item {
   padding: 24px 0;
   border-top: 1px solid rgba(0, 0, 0, 0.1);
-
-  &:last-child {
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
 }
 
 .main-nav__list-link {
@@ -41,16 +37,18 @@
 
   .main-nav__list {
     flex-direction: row;
-    font-size: $fontsize-big
+    font-size: $fontsize-big;
+    font-weight: normal;
   }
 
   .main-nav__list-item {
     border: none;
     padding: 0;
+  }
 
-    &:last-child {
-      border: none;
-    }
+  .main-nav__list-item--active {
+    padding-bottom: 5px;
+    border-bottom: 2px solid $color-additional;
   }
 
   .main-nav__list-link {
@@ -69,7 +67,13 @@
 }
 
 @media screen and (min-width: $screen-lg) {
+  .main-nav__list-link {
+    color: $color-white;
+  }
 
+  .main-nav__list-item--active {
+    border-bottom: 2px solid $color-white;
+  }
 
 
 }

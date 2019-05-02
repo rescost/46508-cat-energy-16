@@ -1,4 +1,7 @@
 .catalog-more {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 320px;
   padding: 25px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
@@ -34,4 +37,17 @@
   text-align: center;
   padding: 13px 20px;
   border: none;
+}
+
+@media screen and (min-width: $screen-md) {
+  .catalog-more {
+    width: 324px;
+  }
+
+}
+
+@media screen and (min-width: $screen-lg) {
+
+
+
 }
