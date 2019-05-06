@@ -1,5 +1,5 @@
 .promo-result {
-  background-color: #f2f2f2;
+  background-color: $gray-light;
   padding-top: 20px;
 }
 
@@ -51,7 +51,7 @@
   }
 
   .promo-result__wrapper {
-    width: 769px;
+    width: $screen-md;
     padding: 0 30px;
   }
 
@@ -63,7 +63,6 @@
   .promo-result__description {
     margin: 0 0 50px 0;
   }
-
 }
 
 @media screen and (min-width: $screen-lg) {
@@ -72,13 +71,12 @@
   }
 
   .promo-result__wrapper {
-    width:  $screen-lg;
-    padding:  0 40px;
+    width: $screen-lg;
+    padding: 0 40px;
   }
 
   .promo-result__slider {
-    width:  $screen-lg;
-    padding:  0 40px;
+    width: $screen-lg;
+    padding: 0 40px;
   }
-
 }

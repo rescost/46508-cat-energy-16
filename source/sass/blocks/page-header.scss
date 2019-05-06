@@ -17,7 +17,7 @@
 
 @media screen and (min-width: $screen-md) {
   .page-header {
-    width: 768px;
+    width: $screen-md;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -37,9 +37,13 @@
 
 @media screen and (min-width: $screen-lg) {
   .page-header {
-    position: relative;
     width: $screen-lg;
     padding: 55px 40px 0 40px;
+  }
+
+  .page-header--index {
+    position: relative;
+
     &::after {
       content: "";
       position: absolute;
@@ -49,7 +53,6 @@
       z-index: -1;
       right: -70px;
       top: 0;
-
     }
   }
 

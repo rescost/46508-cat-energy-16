@@ -1,6 +1,6 @@
-@import "blocks/visually-hidden";
-@import "mixins";
 @import "variables";
+@import "global";
+@import "blocks/visually-hidden";
 @import "blocks/page-header";
 @import "blocks/main-nav";
 @import "blocks/page-main";
@@ -18,42 +18,3 @@
 @import "blocks/other-product-card";
 @import "blocks/catalog-gift";
 @import "blocks/slider-switcher";
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldregular.woff"),
-    url("../fonts/oswaldregular.woff2");
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Oswald";
-  src: url("../fonts/oswaldmedium.woff"),
-    url("../fonts/oswaldmedium.woff2");
-  font-weight: bold;
-}
-
-html {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  font-family: $font-primary;
-  min-width: $screen-xs;
-  margin: 0 auto;
-}
-
-a {
-  text-decoration: none;
-  color: #111111;
-}
-
-img {
-  max-width: 100%;
-}

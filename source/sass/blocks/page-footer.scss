@@ -1,7 +1,7 @@
 .page-footer {
   display: flex;
   flex-direction: column;
-  background-color: #f2f2f2;
+  background-color: $gray-light;
 }
 
 .page-footer__wrapper {
@@ -45,6 +45,9 @@
   .page-footer__wrapper {
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
+    width: $screen-md;
+    padding: 60px 30px;
   }
 
   .page-footer__logo {
@@ -56,18 +59,11 @@
     border-bottom: none;
   }
 
-  .page-footer__wrapper {
-    justify-content: space-between;
-    width: 768px;
-    padding: 60px 30px;
-  }
-
   .page-footer__credits-wrapper {
     width: 162px;
     margin: 0;
     padding: 0;
   }
-
 }
 
 @media screen and (min-width: $screen-lg) {

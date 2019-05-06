@@ -23,7 +23,6 @@
 }
 
 @media screen and (min-width: $screen-md) {
-
   .catalog {
     width: $screen-md;
     padding: 0 30px;
@@ -33,13 +32,15 @@
     font-size: $fontsize-tablet-title-big;
     border-bottom: none;
   }
+
+  .catalog__list {
+    justify-content: space-between;
+  }
 }
 
 @media screen and (min-width: $screen-lg) {
-
   .catalog {
     width: $screen-lg;
     padding: 0 40px;
   }
-
 }

@@ -9,7 +9,7 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="#">
+        <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="/img/logo-desktop.svg">
             <source media="(min-width: 768px)" srcset="/img/logo-tablet.svg">
@@ -23,8 +23,8 @@
           <li class="main-nav__list-item">
             <a class="main-nav__list-link" href="index.html">Главная</a>
           </li>
-          <li class="main-nav__list-item main-nav__list-item--active">
-            <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
+          <li class="main-nav__list-item">
+            <a class="main-nav__list-link main-nav__list-link--active" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="main-nav__list-item">
             <a class="main-nav__list-link" href="form.html">Подбор программы</a>
@@ -262,76 +262,80 @@
       </section>
       <section class="other-product">
         <h2 class="other-product__title">Дополнительные товары</h2>
-        <ul class="other-product__list">
-          <li class="other-product-card">
-            <div class="other-product-card__wrapper">
-              <a class="other-product-card__link">
-                <h3 class="other-product-card__title">Сахарозаменитель</h3>
-              </a>
-              <table class="other-product-card__property">
-                <tr class="other-product-card__property-row">
-                  <td class="other-product-card__property-key">1 упаковка (100 г)</td>
-                  <td class="other-product-card__property-val">200 р.</td>
-                </tr>
-              </table>
-            </div>
-            <a class="button other-product-card__button" href="form.html">Заказать</a>
-          </li>
-          <li class="other-product-card">
-            <div class="other-product-card__wrapper">
-            <a class="other-product-card__link">
-              <h3 class="other-product-card__title">Питьевая вода</h3>
-            </a>
-            <table class="other-product-card__property">
-              <tr class="other-product-card__property-row">
-                <td class="other-product-card__property-key">5 листров</td>
-                <td class="other-product-card__property-val">50 р.</td>
-              </tr>
-            </table>
-          </div>
-            <a class="button other-product-card__button" href="form.html">Заказать</a>
-          </li>
-          <li class="other-product-card">
-            <div class="other-product-card__wrapper">
-            <a class="other-product-card__link">
-              <h3 class="other-product-card__title">Молоко</h3>
-            </a>
-            <table class="other-product-card__property">
-              <tr class="other-product-card__property-row">
-                <td class="other-product-card__property-key">1 литр</td>
-                <td class="other-product-card__property-val">100 р.</td>
-              </tr>
-            </table>
-          </div>
-            <a class="button other-product-card__button" href="form.html">Заказать</a>
-          </li>
-          <li class="other-product-card">
-            <div class="other-product-card__wrapper">
-            <a class="other-product-card__link">
-              <h3 class="other-product-card__title">Витамины</h3>
-            </a>
-            <table class="other-product-card__property">
-              <tr class="other-product-card__property-row">
-                <td class="other-product-card__property-key">1 упаковка (30 г)</td>
-                <td class="other-product-card__property-val">300 р.</td>
-              </tr>
-            </table>
-          </div>
-            <a class="button other-product-card__button" href="form.html">Заказать</a>
-          </li>
-        </ul>
+        <div class="other-product__wrapper">
+          <ul class="other-product__list">
+            <li class="other-product-card">
+              <div class="other-product-card__wrapper">
+                <a class="other-product-card__link">
+                  <h3 class="other-product-card__title">Сахарозаменитель</h3>
+                </a>
+                <table class="other-product-card__property">
+                  <tr class="other-product-card__property-row">
+                    <td class="other-product-card__property-key">1 упаковка (100 г)</td>
+                    <td class="other-product-card__property-val">200 р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="button other-product-card__button" href="form.html">Заказать</a>
+            </li>
+            <li class="other-product-card">
+              <div class="other-product-card__wrapper">
+                <a class="other-product-card__link">
+                  <h3 class="other-product-card__title">Питьевая вода</h3>
+                </a>
+                <table class="other-product-card__property">
+                  <tr class="other-product-card__property-row">
+                    <td class="other-product-card__property-key">5 листров</td>
+                    <td class="other-product-card__property-val">50 р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="button other-product-card__button" href="form.html">Заказать</a>
+            </li>
+            <li class="other-product-card">
+              <div class="other-product-card__wrapper">
+                <a class="other-product-card__link">
+                  <h3 class="other-product-card__title">Молоко</h3>
+                </a>
+                <table class="other-product-card__property">
+                  <tr class="other-product-card__property-row">
+                    <td class="other-product-card__property-key">1 литр</td>
+                    <td class="other-product-card__property-val">100 р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="button other-product-card__button" href="form.html">Заказать</a>
+            </li>
+            <li class="other-product-card">
+              <div class="other-product-card__wrapper">
+                <a class="other-product-card__link">
+                  <h3 class="other-product-card__title">Витамины</h3>
+                </a>
+                <table class="other-product-card__property">
+                  <tr class="other-product-card__property-row">
+                    <td class="other-product-card__property-key">1 упаковка (30 г)</td>
+                    <td class="other-product-card__property-val">300 р.</td>
+                  </tr>
+                </table>
+              </div>
+              <a class="button other-product-card__button" href="form.html">Заказать</a>
+            </li>
+          </ul>
+          <a class="catalog-gift" href="#">
+            <svg width="55" height="60"></svg>
+            <p class="catalog-gift__description">Закажите все и получите чехол для кота в подарок!</p>
+          </a>
+        </div>
       </section>
-      <a class="catalog-gift" href="#">
-        <svg width="55" height="60"></svg>
-        <p class="catalog-gift__description">Закажите все и получите чехол для кота в подарок!</p>
-      </a>
       <section class="contacts-dillers">
-        <div class="contacts-dillers__description">
-          <h2 class="contacts-dillers__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <div class="contacts-dillers__adress">ул.Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+        <div class="contacts-dillers__wrapper">
+          <div class="contacts-dillers__description">
+            <h2 class="contacts-dillers__title">Приглашаем к сотрудничеству дилеров!</h2>
+            <div class="contacts-dillers__adress">ул.Большая Конюшенная, д. 19/8 Санкт-Петербург</div>
+          </div>
         </div>
         <div class="contacts-dillers__map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2995052868198!2d30.322215908964566!3d59.938795738112425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556017726849!5m2!1sru!2sru" width="100%" height="373" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d999.2995052868198!2d30.322215908964566!3d59.938795738112425!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1556017726849!5m2!1sru!2sru" width="100%" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
         </div>
       </section>
     </main>
@@ -340,7 +344,6 @@
         <a class="page-footer__logo" href="#">
           <img class="page-footer__logo-catenergy" src="img/logo-footer.svg" alt="Логотип Кэт Энерджи" width="128" height="24">
         </a>
-
         <div class="page-footer__social-links">
           <ul class="social-list">
             <li class="social-list__item">

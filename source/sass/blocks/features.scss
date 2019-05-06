@@ -74,8 +74,8 @@
 
 @media screen and (min-width: $screen-lg) {
   .features {
-    width:  1300px;
-    padding:  0 40px;
+    width: $screen-lg;
+    padding: 0 40px;
   }
 
   .features__item {
@@ -86,12 +86,11 @@
 
     &:nth-child(even) {
       width: 245px;
-      margin-right:   80px;
+      margin-right: 80px;
     }
 
     &:last-child {
-      margin-right:   0;
+      margin-right: 0;
     }
   }
-
 }

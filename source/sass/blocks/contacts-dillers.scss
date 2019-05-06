@@ -44,7 +44,7 @@
   }
 
   .contacts-dillers__description {
-    width: 768px;
+    width: $screen-md;
     padding: 0 30px;
   }
 
@@ -58,11 +58,36 @@
     text-align: right;
     width: 153px;
   }
-
 }
 
 @media screen and (min-width: $screen-lg) {
+  .contacts-dillers {
+    padding: 0;
+    background-color: $gray-light;
+  }
 
+  .contacts-dillers__wrapper {
+    position: relative;
+    width: $screen-lg;
+    margin: 0 auto;
+  }
 
+  .contacts-dillers__description {
+    position: absolute;
+    top: 95px;
+    left: 40px;
+    background-color: $color-white;
+    width: 570px;
+    padding: 65px 90px 70px 70px;
+  }
 
+  .contacts-dillers__title {
+    margin: 0 40px 0 0;
+    padding: 0;
+  }
+
+  .contacts-dillers__adress {
+    margin: 0 0 0 40px;
+    text-align: left;
+  }
 }

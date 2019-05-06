@@ -1,7 +1,6 @@
 .homepage-banner {
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: auto;
   background-position: 50% 0;
 }
 
@@ -13,7 +12,7 @@
 }
 
 .homepage-banner__title {
-  color: #ffffff;
+  color: $color-white;
   font-size: $fontsize-title-big;
   line-height: 1;
   font-weight: normal;
@@ -28,7 +27,7 @@
   line-height: 1;
   padding: 0 20px;
   text-align: center;
-  color: #ffffff;
+  color: $color-white;
   margin-bottom: 30px;
 }
 
@@ -45,7 +44,7 @@
   background-color: $color-additional;
   text-transform: uppercase;
   margin: 0 auto;
-  color: #ffffff;
+  color: $color-white;
   text-align: center;
   padding: 13px 20px;
   margin-bottom: 22px;
@@ -53,7 +52,7 @@
 
 @media screen and (min-width: $screen-md) {
   .homepage-banner {
-    width: 768px;
+    width: $screen-md;
     margin: 0 auto;
     padding: 0 30px;
     background-image: none;
@@ -64,7 +63,6 @@
     text-align: left;
     padding: 0 192px 0 89px;
     font-size: $fontsize-tablet-title-big;
-
   }
 
   .homepage-banner__description {
@@ -91,12 +89,11 @@
     width: 245px;
     margin: 0 0 0 89px;
   }
-
 }
 
 @media screen and (min-width: $screen-lg) {
   .homepage-banner {
-    width: 1300px;
+    width: $screen-lg;
     padding: 0 40px;
   }
 
@@ -115,7 +112,6 @@
   }
 
   .homepage-banner__title {
-    padding:  0 0 0 89px;
+    padding: 0 0 0 89px;
   }
-
 }

@@ -9,3 +9,34 @@
   margin: 0 auto;
   text-align: center;
 }
+
+@media screen and (min-width: $screen-md) {
+  .catalog-gift {
+    position: relative;
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
+  .catalog-gift__description {
+    width: 160px;
+    position: absolute;
+    top: 75px;
+    right: 125px;
+    color: $color-white;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .catalog-gift {
+    width: 245px;
+    min-height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
+
+  .catalog-gift__description {
+    position: relative;
+    top: 0;
+    right: 0;
+  }
+}
