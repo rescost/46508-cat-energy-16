@@ -2,67 +2,69 @@
   display: flex;
   flex-direction: column;
   background-color: $gray-light;
-}
 
-.page-footer__wrapper {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  width: 100%;
-  margin: 0 auto;
-  padding: 28px 20px 0 20px;
-}
+  &__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: 28px 20px 0 20px;
+  }
 
-.page-footer__logo {
-  display: block;
-  text-align: center;
-  padding-bottom: 31px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
+  &__logo {
+    display: block;
+    text-align: center;
+    padding-bottom: 31px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 
-.page-footer__credits-wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 100%;
-  max-width: 320px;
-  margin: 0 auto;
-  padding: 22px 0;
-}
+  &__credits-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    padding: 22px 0;
+  }
 
-.page-footer__credits-copyright {
-  font-family: $font-secondary;
-  font-size: $fontsize-base;
-  line-height: 16px;
-}
+  &__credits-copyright {
+    font-family: $font-secondary;
+    font-size: $fontsize-base;
+    line-height: 16px;
+  }
 
-.page-footer__social-links {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  &__social-links {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
 }
 
 @media screen and (min-width: $screen-md) {
-  .page-footer__wrapper {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    width: $screen-md;
-    padding: 60px 30px;
-  }
+  .page-footer {
+    &__wrapper {
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: $screen-md;
+      padding: 60px 30px;
+    }
 
-  .page-footer__logo {
-    border-bottom: none;
-    padding: 0;
-  }
+    &__logo {
+      border-bottom: none;
+      padding: 0;
+    }
 
-  .page-footer__social-links {
-    border-bottom: none;
-  }
+    &__social-links {
+      border-bottom: none;
+    }
 
-  .page-footer__credits-wrapper {
-    width: 162px;
-    margin: 0;
-    padding: 0;
+    &__credits-link {
+      width: 162px;
+      margin: 0;
+      padding: 0;
+    }
   }
 }
 

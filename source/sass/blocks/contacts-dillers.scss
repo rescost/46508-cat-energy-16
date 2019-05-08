@@ -6,57 +6,57 @@
   justify-content: space-between;
   padding: 30px 0 0 0;
   background-color: $gray-light;
-}
 
-.contacts-dillers__description {
-  padding: 0 20px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
+  &__description {
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.contacts-dillers__title {
-  font-size: $fontsize-base;
-  line-height: 20px;
-  font-weight: normal;
-  text-transform: uppercase;
-  max-width: 50%;
-  margin: 0;
-  padding-right: 15px;
-}
+  &__title {
+    font-size: $fontsize-base;
+    line-height: 20px;
+    font-weight: normal;
+    text-transform: uppercase;
+    max-width: 50%;
+    margin: 0;
+    padding-right: 15px;
+  }
 
-.contacts-dillers__adress {
-  font-family: $font-secondary;
-  font-size: $fontsize-smaller;
-  line-height: 20px;
-  max-width: 50%;
-}
+  &__adress {
+    font-family: $font-secondary;
+    font-size: $fontsize-smaller;
+    line-height: 20px;
+    max-width: 50%;
+  }
 
-.contacts-dillers__map {
-  margin: 25px 0 0 0;
-  width: 100%;
+  &__map {
+    margin: 25px 0 0 0;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: $screen-md) {
   .contacts-dillers {
     background-color: $color-white;
-  }
 
-  .contacts-dillers__description {
-    width: $screen-md;
-    padding: 0 30px;
-  }
+    &__description {
+      width: $screen-md;
+      padding: 0 30px;
+    }
 
-  .contacts-dillers__title {
-    margin-left: 42px;
-    width: 153px;
-  }
+    &__title {
+      margin-left: 42px;
+      width: 153px;
+    }
 
-  .contacts-dillers__adress {
-    margin-right: 42px;
-    text-align: right;
-    width: 153px;
+    &__adress {
+      margin-right: 42px;
+      text-align: right;
+      width: 153px;
+    }
   }
 }
 
@@ -64,30 +64,30 @@
   .contacts-dillers {
     padding: 0;
     background-color: $gray-light;
-  }
 
-  .contacts-dillers__wrapper {
-    position: relative;
-    width: $screen-lg;
-    margin: 0 auto;
-  }
+    &__wrapper {
+      position: relative;
+      width: $screen-lg;
+      margin: 0 auto;
+    }
 
-  .contacts-dillers__description {
-    position: absolute;
-    top: 95px;
-    left: 40px;
-    background-color: $color-white;
-    width: 570px;
-    padding: 65px 90px 70px 70px;
-  }
+    &__description {
+      position: absolute;
+      top: 95px;
+      left: 40px;
+      background-color: $color-white;
+      width: 570px;
+      padding: 65px 90px 70px 70px;
+    }
 
-  .contacts-dillers__title {
-    margin: 0 40px 0 0;
-    padding: 0;
-  }
+    &__title {
+      margin: 0 40px 0 0;
+      padding: 0;
+    }
 
-  .contacts-dillers__adress {
-    margin: 0 0 0 40px;
-    text-align: left;
+    &__adress {
+      margin: 0 0 0 40px;
+      text-align: left;
+    }
   }
 }

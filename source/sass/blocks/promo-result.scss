@@ -1,82 +1,82 @@
 .promo-result {
   background-color: $gray-light;
   padding-top: 20px;
-}
 
-.promo-result__wrapper {
-  margin: 0 auto;
-  padding: 0 20px;
-}
+  &__wrapper {
+    margin: 0 auto;
+    padding: 0 20px;
+  }
 
-.promo-result__title {
-  font-size: $fontsize-title-big;
-  line-height: 60px;
-  font-weight: normal;
-  margin: 0 0 30px 0;
-}
+  &__title {
+    font-size: $fontsize-title-big;
+    line-height: 60px;
+    font-weight: normal;
+    margin: 0 0 30px 0;
+  }
 
-.promo-result__description {
-  font-family: $font-secondary;
-  font-size: $fontsize-smaller;
-  line-height: 18px;
-  font-weight: normal;
-}
+  &__description {
+    font-family: $font-secondary;
+    font-size: $fontsize-smaller;
+    line-height: 18px;
+    font-weight: normal;
+  }
 
-.promo-result__fact-value {
-  font-size: $fontsize-title-medium;
-  line-height: 24px;
-  font-weight: normal;
-}
+  &__fact-value {
+    font-size: $fontsize-title-medium;
+    line-height: 24px;
+    font-weight: normal;
+  }
 
-.promo-result__fact-caption {
-  font-size: $fontsize-small;
-  line-height: 12px;
-}
+  &__fact-caption {
+    font-size: $fontsize-small;
+    line-height: 12px;
+  }
 
-.promo-result__cost {
-  text-transform: uppercase;
-  text-align: center;
-  font-size: $fontsize-smaller;
-  line-height: 20px;
-}
+  &__cost {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $fontsize-smaller;
+    line-height: 20px;
+  }
 
-.promo-result__slider {
-  padding: 0 20px;
-  margin: 0 auto;
+  &__slider {
+    padding: 0 20px;
+    margin: 0 auto;
+  }
 }
 
 @media screen and (min-width: $screen-md) {
   .promo-result {
     background-color: $color-white;
-  }
 
-  .promo-result__wrapper {
-    width: $screen-md;
-    padding: 0 30px;
-  }
+    &__wrapper {
+      width: $screen-md;
+      padding: 0 30px;
+    }
 
-  .promo-result__slider {
-    background-color: $gray-light;
-    padding: 0 30px;
-  }
+    &__slider {
+      background-color: $gray-light;
+      padding: 0 30px;
+    }
 
-  .promo-result__description {
-    margin: 0 0 50px 0;
+    &__description {
+      margin: 0 0 50px 0;
+    }
   }
 }
 
 @media screen and (min-width: $screen-lg) {
   .promo-result {
     background-color: $gray-light;
-  }
 
-  .promo-result__wrapper {
-    width: $screen-lg;
-    padding: 0 40px;
-  }
+    &__wrapper {
+      width: $screen-lg;
+      padding: 0 40px;
+    }
 
-  .promo-result__slider {
-    width: $screen-lg;
-    padding: 0 40px;
+    &__slider {
+      width: $screen-lg;
+      padding: 0 40px;
+    }
   }
 }

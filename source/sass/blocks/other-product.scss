@@ -1,36 +1,30 @@
 .other-product {
   margin: 0 auto;
   padding: 0 20px;
-}
 
-.other-product__title {
-  font-size: $fontsize-title-medium;
-  line-height: 24px;
-  font-weight: normal;
-  padding: 25px 0;
-  border-bottom: 1px solid #cdcdcd;
-}
+  &__title {
+    font-size: $fontsize-title-medium;
+    line-height: 24px;
+    font-weight: normal;
+    padding: 25px 0;
+    border-bottom: 1px solid #cdcdcd;
+  }
 
-.other-product__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
+  &__list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
 }
 
 @media screen and (min-width: $screen-md) {
   .other-product {
     width: $screen-md;
     padding: 0 30px;
-  }
 
-  .other-product__title {
-    border: none;
-    padding: 25px 37px;
-  }
-
-  .other-product-card {
-    &:first-child {
-      border-top: 1px solid #cdcdcd;
+    &__title {
+      border: none;
+      padding: 25px 37px;
     }
   }
 }
@@ -39,20 +33,20 @@
   .other-product {
     width: $screen-lg;
     padding: 0 40px;
-  }
 
-  .other-product__title {
-    padding: 25px 0;
-  }
+    &__title {
+      padding: 25px 0;
+    }
 
-  .other-product__wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+    &__wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
-  .other-product__list {
-    width: 895px;
-    margin-right: 80px;
+    &__list {
+      width: 895px;
+      margin-right: 80px;
+    }
   }
 }

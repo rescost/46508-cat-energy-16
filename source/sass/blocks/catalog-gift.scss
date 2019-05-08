@@ -2,12 +2,12 @@
   display: block;
   width: 100%;
   margin-bottom: 35px;
-}
 
-.catalog-gift__description {
-  width: 160px;
-  margin: 0 auto;
-  text-align: center;
+  &__description {
+    width: 160px;
+    margin: 0 auto;
+    text-align: center;
+  }
 }
 
 @media screen and (min-width: $screen-md) {
@@ -15,15 +15,15 @@
     position: relative;
     min-height: 200px;
     background-image: url("../img/gift-photo-tablet@1x.jpg");
-  }
 
-  .catalog-gift__description {
-    width: 160px;
-    position: absolute;
-    top: 75px;
-    right: 125px;
-    color: $color-white;
-    text-align: left;
+    &__description {
+      width: 160px;
+      position: absolute;
+      top: 75px;
+      right: 125px;
+      color: $color-white;
+      text-align: left;
+    }
   }
 }
 
@@ -32,11 +32,11 @@
     width: 245px;
     min-height: 289px;
     background-image: url("../img/gift-photo-desktop@1x.jpg");
-  }
 
-  .catalog-gift__description {
-    position: relative;
-    top: 0;
-    right: 0;
+    &__description {
+      position: relative;
+      top: 0;
+      right: 0;
+    }
   }
 }

@@ -5,38 +5,38 @@
   width: $screen-xs;
   padding: 25px 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-}
 
-.catalog-more__link {
-  display: block;
-  text-align: center;
-  text-transform: uppercase;
-  font-weight: normal;
-  font-size: $fontsize-base;
-  line-height: 20px;
-}
+  &__link {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: $fontsize-base;
+    line-height: 20px;
+  }
 
-.catalog-more__description {
-  font-family: $font-secondary;
-  text-align: center;
-  font-size: 12px;
-  line-height: 16px;
-  margin-bottom: 20px;
-}
+  &__description {
+    font-family: $font-secondary;
+    text-align: center;
+    font-size: $fontsize-small;
+    line-height: 16px;
+    margin-bottom: 20px;
+  }
 
-.catalog-more__button {
-  display: block;
-  width: 280px;
-  font-size: $fontsize-base;
-  line-height: 20px;
-  font-weight: normal;
-  background-color: $gray-light;
-  text-transform: uppercase;
-  margin: 0 auto;
-  color: $gray-darken;
-  text-align: center;
-  padding: 13px 20px;
-  border: none;
+  &__button {
+    display: block;
+    width: 280px;
+    font-size: $fontsize-base;
+    line-height: 20px;
+    font-weight: normal;
+    background-color: $gray-light;
+    text-transform: uppercase;
+    margin: 0 auto;
+    color: $gray-darken;
+    text-align: center;
+    padding: 13px 20px;
+    border: none;
+  }
 }
 
 @media screen and (min-width: $screen-md) {
@@ -48,9 +48,9 @@
 @media screen and (min-width: $screen-lg) {
   .catalog-more {
     width: 245px;
-  }
 
-  .catalog-more__button {
-    width: 169px;
+    &__button {
+      width: 169px;
+    }
   }
 }
