@@ -9,7 +9,7 @@
     font-weight: normal;
     text-transform: uppercase;
     font-size: $fontsize-base;
-    line-height: 20px;
+    line-height: $lineheight-biggest;
     margin: 0 0 15px 0;
     width: 75px;
   }
@@ -29,7 +29,7 @@
     width: 100%;
     font-family: $font-secondary;
     font-size: $fontsize-small;
-    line-height: 16px;
+    line-height: $lineheight-base;
   }
 
   &__property-key {
@@ -44,7 +44,7 @@
     display: block;
     width: 280px;
     font-size: $fontsize-base;
-    line-height: 20px;
+    line-height: $lineheight-biggest;
     font-weight: normal;
     background-color: $color-additional;
     text-transform: uppercase;

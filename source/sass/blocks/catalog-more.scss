@@ -12,14 +12,14 @@
     text-transform: uppercase;
     font-weight: normal;
     font-size: $fontsize-base;
-    line-height: 20px;
+    line-height: $lineheight-biggest;
   }
 
   &__description {
     font-family: $font-secondary;
     text-align: center;
     font-size: $fontsize-small;
-    line-height: 16px;
+    line-height: $lineheight-base;
     margin-bottom: 20px;
   }
 
@@ -27,7 +27,7 @@
     display: block;
     width: 280px;
     font-size: $fontsize-base;
-    line-height: 20px;
+    line-height: $lineheight-biggest;
     font-weight: normal;
     background-color: $gray-light;
     text-transform: uppercase;

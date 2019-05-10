@@ -9,7 +9,7 @@
 
   &__title {
     font-size: $fontsize-title-big;
-    line-height: 60px;
+    line-height: $lineheight-title-biggest;
     font-weight: normal;
     margin: 0 0 30px 0;
   }
@@ -17,26 +17,26 @@
   &__description {
     font-family: $font-secondary;
     font-size: $fontsize-smaller;
-    line-height: 18px;
+    line-height: $lineheight-big;
     font-weight: normal;
   }
 
   &__fact-value {
     font-size: $fontsize-title-medium;
-    line-height: 24px;
+    line-height: $lineheight-title-medium;
     font-weight: normal;
   }
 
   &__fact-caption {
     font-size: $fontsize-small;
-    line-height: 12px;
+    line-height: $lineheight-small;
   }
 
   &__cost {
     text-transform: uppercase;
     text-align: center;
     font-size: $fontsize-smaller;
-    line-height: 20px;
+    line-height: $lineheight-biggest;
   }
 
   &__slider {

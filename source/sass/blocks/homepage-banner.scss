@@ -13,7 +13,7 @@
   &__title {
     color: $color-white;
     font-size: $fontsize-title-big;
-    line-height: 1;
+    line-height: $lineheight-base;
     font-weight: normal;
     text-align: center;
     padding: 0 20px;
@@ -23,7 +23,7 @@
     text-transform: uppercase;
     font-weight: normal;
     font-size: $fontsize-smaller;
-    line-height: 1;
+    line-height: $lineheight-base;
     padding: 0 20px;
     text-align: center;
     color: $color-white;
@@ -39,7 +39,7 @@
     width: 280px;
     display: block;
     font-size: $fontsize-smaller;
-    line-height: 1;
+    line-height: $lineheight-base;
     background-color: $color-additional;
     text-transform: uppercase;
     margin: 0 auto;

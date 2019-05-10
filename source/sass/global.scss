@@ -30,7 +30,7 @@ body {
   font-family: $font-primary;
   min-width: $screen-xs;
   margin: 0 auto;
-  line-height: 1;
+  line-height: $lineheight-base;
   color: $color-black;
 }
 

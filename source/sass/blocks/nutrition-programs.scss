@@ -15,7 +15,7 @@
   &__item-title {
     text-transform: uppercase;
     font-size: $fontsize-title-medium;
-    line-height: 37.02px;
+    line-height: $lineheight-title-big-more;
     font-weight: normal;
     text-align: center;
     margin: 0;
@@ -24,13 +24,13 @@
   &__item-description {
     font-family: $font-secondary;
     font-size: $fontsize-smaller;
-    line-height: 18px;
+    line-height: $lineheight-big;
     font-weight: normal;
   }
 
   &__item-link {
     font-size: $fontsize-base;
-    line-height: 16px;
+    line-height: $lineheight-base;
     text-transform: uppercase;
   }
 }

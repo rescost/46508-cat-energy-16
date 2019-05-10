@@ -33,7 +33,7 @@
   &__credits-copyright {
     font-family: $font-secondary;
     font-size: $fontsize-base;
-    line-height: 16px;
+    line-height: $lineheight-base;
   }
 
   &__social-links {
