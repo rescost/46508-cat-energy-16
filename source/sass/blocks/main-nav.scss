@@ -6,13 +6,12 @@
   padding: 0;
   text-align: center;
   font-size: $fontsize-biggest;
-  line-height: $lineheight-biggest;
+  line-height: 20px;
   text-transform: uppercase;
   font-weight: bold;
 
-
   &-item {
-    padding: 24px 0;
+    padding: 22px 0 23px ;
     border-top: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -22,17 +21,43 @@
   }
 }
 
+.main-nav--closed {
+  display: none;
+}
+
+.main-nav--opened {
+  display: block;
+}
+
+.main-nav--nojs {
+  display: block;
+}
+
 .main-nav__button {
   display: block;
+  cursor: pointer;
   width: 24px;
   height: 18px;
   border: none;
-  background-color: $color-black;
+  background: url("../img/icon-mobile-menu.svg");
+}
+
+.main-nav__button--closed {
+  display: block;
+  cursor: pointer;
+  width: 19px;
+  height: 19px;
+  border: none;
+  background: url(../img/icon-close.svg);
 }
 
 @media screen and (min-width: $screen-md) {
   .main-nav__button {
     display: none;
+  }
+
+  .main-nav--md {
+    display: block;
   }
 
   .main-nav__list {

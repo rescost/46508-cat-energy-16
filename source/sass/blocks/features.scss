@@ -1,5 +1,5 @@
 .features {
-  margin: 0 auto;
+  margin: 0 auto 42px auto;
   padding: 0 20px;
 
   &__item {
@@ -16,13 +16,33 @@
       margin-right: 20px;
       background-color: $color-additional;
     }
+
+    &--health::before {
+      background-image: url("../img/advantage-leaf@1x.png");
+      background-position: 50% 50%;
+    }
+
+    &--soluble::before {
+      background-image: url("../img/advantage-powder@1x.png");
+      background-position: 50% 50%;
+    }
+
+    &--eating::before {
+      background-image: url("../img/advantage-dining@1x.png");
+      background-position: 50% 50%;
+    }
+
+    &--change::before {
+      background-image: url("../img/advantage-clock@1x.png");
+      background-position: 50% 50%;
+    }
   }
 
   &__title {
     font-size: $fontsize-title-big;
-    line-height: $lineheight-title-biggest;
+    line-height: 60px;
     font-weight: normal;
-    margin: 0 0 35px 0;
+    margin: 0 0 28px 0;
   }
 
   &__list {
@@ -34,7 +54,14 @@
   &__item-description {
     font-family: $font-secondary;
     font-size: $fontsize-smaller;
-    line-height: $lineheight-biggest;
+    margin: 0;
+    line-height: 18px;
+  }
+}
+
+.features__item {
+  &--health::before {
+
   }
 }
 
@@ -58,7 +85,7 @@
     &__item-description {
       width: 225px;
       font-size: $fontsize-base;
-      line-height: $lineheight-title-medium;
+      line-height: 24px;
     }
   }
 }

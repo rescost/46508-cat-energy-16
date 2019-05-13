@@ -1,6 +1,6 @@
 .promo-result {
   background-color: $gray-light;
-  padding-top: 20px;
+  padding-top: 17px;
 
   &__wrapper {
     margin: 0 auto;
@@ -9,34 +9,35 @@
 
   &__title {
     font-size: $fontsize-title-big;
-    line-height: $lineheight-title-biggest;
+    line-height: 60px;
     font-weight: normal;
-    margin: 0 0 30px 0;
+    margin: 0 0 23px 0;
   }
 
   &__description {
     font-family: $font-secondary;
     font-size: $fontsize-smaller;
-    line-height: $lineheight-big;
+    line-height: 18px;
     font-weight: normal;
+    width: 266px;
   }
 
   &__fact-value {
     font-size: $fontsize-title-medium;
-    line-height: $lineheight-title-medium;
+    line-height: 24px;
     font-weight: normal;
   }
 
   &__fact-caption {
     font-size: $fontsize-small;
-    line-height: $lineheight-small;
+    line-height: 12px;
   }
 
   &__cost {
     text-transform: uppercase;
     text-align: center;
     font-size: $fontsize-smaller;
-    line-height: $lineheight-biggest;
+    line-height: 20px;
   }
 
   &__slider {

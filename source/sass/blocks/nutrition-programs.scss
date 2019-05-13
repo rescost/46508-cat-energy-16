@@ -4,34 +4,82 @@
 
   &__item {
     background-color: $gray-light;
-    padding: 20px;
+    padding: 30px 20px 21px 20px;
     margin-bottom: 20px;
   }
 
+
   &__item:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 17px;
   }
 
+
   &__item-title {
+    position: relative;
     text-transform: uppercase;
     font-size: $fontsize-title-medium;
-    line-height: $lineheight-title-big-more;
+    line-height: 37.02px;
     font-weight: normal;
-    text-align: center;
-    margin: 0;
+    margin: 0 0 0 71px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      margin-left: -69px;
+      top: -5px;
+      width: 50px;
+      height: 50px;
+      background-color: #68b738;
+      border-radius: 50%;
+    }
+  }
+
+  &__item-title--slim::after {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+    top: -7px;
+    left: -61px;
+  }
+
+  &__item-title--fat::after {
+    content: "";
+    position: absolute;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    top: 5px;
+    left: -78px;
   }
 
   &__item-description {
     font-family: $font-secondary;
     font-size: $fontsize-smaller;
-    line-height: $lineheight-big;
+    line-height: 18px;
     font-weight: normal;
+    margin: 30px 0 20px 0;
+    padding-bottom: 21px;
+    border-bottom: 1px solid $gray-lightning;
   }
 
   &__item-link {
     font-size: $fontsize-base;
-    line-height: $lineheight-base;
+    line-height: 16px;
     text-transform: uppercase;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 24px;
+      height: 11px;
+      background: url("../img/icon-right-arrow-long.svg") center no-repeat;
+      margin-left: 11px;
+      margin-top: 2px;
+
+    }
   }
 }
 

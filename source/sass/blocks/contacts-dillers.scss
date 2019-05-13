@@ -17,7 +17,7 @@
 
   &__title {
     font-size: $fontsize-base;
-    line-height: $lineheight-biggest;
+    line-height: 20px;
     font-weight: normal;
     text-transform: uppercase;
     max-width: 50%;
@@ -28,7 +28,7 @@
   &__adress {
     font-family: $font-secondary;
     font-size: $fontsize-smaller;
-    line-height: $lineheight-biggest;
+    line-height: 20px;
     max-width: 50%;
   }
 
