@@ -67,8 +67,9 @@
     &__title {
       color: $color-black;
       text-align: left;
-      padding: 0 192px 0 89px;
+      padding: 26px 192px 20px 89px;
       font-size: $fontsize-tablet-title-big;
+      line-height: 60px;
     }
 
     &__description {
@@ -82,7 +83,7 @@
     &__wrapper {
       position: relative;
       min-height: auto;
-      margin-bottom: 30px;
+      margin-bottom: 10px;
       background-image: none;
       background-color: transparent;
     }
@@ -91,13 +92,15 @@
       width: auto;
       height: 609px;
       position: absolute;
-      top: 230px;
+      top: 255px;
       z-index: -1;
     }
 
     &__button {
       width: 245px;
       margin: 0 0 0 89px;
+      padding: 17px 20px;
+      font-size: 20px;
     }
   }
 }
