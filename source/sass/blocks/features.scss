@@ -1,6 +1,9 @@
 .features {
-  margin: 0 auto 42px auto;
-  padding: 0 20px;
+
+  &__wrapper {
+    margin: 0 auto 42px auto;
+    padding: 0 20px;
+  }
 
   &__item {
     margin-bottom: 20px;
@@ -20,21 +23,25 @@
     &--health::before {
       background-image: url("../img/advantage-leaf@1x.png");
       background-position: 50% 50%;
+      background-repeat: no-repeat;
     }
 
     &--soluble::before {
       background-image: url("../img/advantage-powder@1x.png");
       background-position: 50% 50%;
+      background-repeat: no-repeat;
     }
 
     &--eating::before {
       background-image: url("../img/advantage-dining@1x.png");
       background-position: 50% 50%;
+      background-repeat: no-repeat;
     }
 
     &--change::before {
       background-image: url("../img/advantage-clock@1x.png");
       background-position: 50% 50%;
+      background-repeat: no-repeat;
     }
   }
 
@@ -67,8 +74,19 @@
 
 @media screen and (min-width: $screen-md) {
   .features {
-    width: $screen-md;
-    padding: 0 30px;
+    border-bottom: 1px solid $gray-lightning;
+
+    &__wrapper {
+      width: $screen-md;
+      padding: 0 30px;
+      position: relative;
+      margin: 0 auto 46px auto;
+    }
+
+    &__title {
+      margin-top: 47px;
+      font-size: $fontsize-tablet-title-big;
+    }
 
     &__list {
       display: flex;
@@ -76,14 +94,62 @@
     }
 
     &__item {
+      position: relative;
       flex-direction: column;
       align-items: flex-start;
       width: 50%;
       margin-bottom: 55px;
+      margin-top: 45px;
+
+      &::before {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 31px;
+      }
+    }
+
+    &__item--health::after {
+      content: "1";
+      position: absolute;
+      left: 119px;
+      top: 90px;
+      font-size: 281px;
+      color: $gray-light;
+      z-index: -1;
+    }
+
+    &__item--soluble::after {
+      content: "2";
+      position: absolute;
+      left: 140px;
+      top: 90px;
+      font-size: 281px;
+      color: $gray-light;
+      z-index: -1;
+    }
+
+    &__item--eating::after {
+      content: "3";
+      position: absolute;
+      left: 114px;
+      top: 90px;
+      font-size: 281px;
+      color: $gray-light;
+      z-index: -1;
+    }
+
+    &__item--change::after {
+      content: "4";
+      position: absolute;
+      left: 145px;
+      top: 90px;
+      font-size: 281px;
+      color: $gray-light;
+      z-index: -1;
     }
 
     &__item-description {
-      width: 225px;
+      width: 245px;
       font-size: $fontsize-base;
       line-height: 24px;
     }
@@ -94,6 +160,11 @@
   .features__item--soluble,
   .features__item--change {
     padding-left: 30px;
+  }
+
+  .features__item--eating,
+  .features__item--change {
+    margin-top: 80px;
   }
 }
 

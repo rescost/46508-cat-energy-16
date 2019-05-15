@@ -89,34 +89,58 @@
     padding: 0;
 
     &__item {
-      padding: 80px 60px 60px 55px;
+      padding: 75px 60px 60px 53px;
+      margin-bottom: 33px;
     }
 
     &__item-title {
       text-align: left;
       font-size: $fontsize-title-big;
-      margin: 0 0 30px 0;
+      margin: 0 0 25px 0;
     }
 
     &__item-title::before {
       width: 200px;
       height: 200px;
       right: 0;
-      top: 11px;
+      top: 16px;
     }
 
     &__item-title--slim::after {
       width: 140px;
       height: 194px;
-      top: 0;
-      left: 420px;
+      top: 4px;
+      left: 423px;
+    }
+
+    &__item-title--fat::after {
+      width: 268px;
+      height: 112px;
+      top: 60px;
+      left: 359px;
     }
 
     &__item-description {
-      margin: 0 0 30px 0;
-      max-width: 390px;
+      margin: 0 0 37px 0;
+      max-width: 380px;
+      font-size: $fontsize-base;
+      line-height: 24px;
+      border-bottom: none;
+    }
+
+    &__item-link {
+      font-size: $fontsize-biggest;
+
+      &::after {
+        margin-left: 25px;
+        margin-top: 3px;
+      }
     }
   }
+
+  .nutrition-programs__item-title--fat ~ .nutrition-programs__item-description {
+      width: 340px;
+    }
 }
 
 @media screen and (min-width: $screen-lg) {
