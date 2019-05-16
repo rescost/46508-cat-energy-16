@@ -1,6 +1,6 @@
 .promo-result {
   background-color: $gray-light;
-  padding-top: 17px;
+  padding: 17px 0 36px 0;
 
   &__wrapper {
     margin: 0 auto;
@@ -12,6 +12,7 @@
     line-height: 60px;
     font-weight: normal;
     margin: 0 0 23px 0;
+    padding: 0 20px;
   }
 
   &__description {
@@ -198,16 +199,65 @@
 
 @media screen and (min-width: $screen-lg) {
   .promo-result {
-    background-color: $gray-light;
+    background-color: $color-white;
+    padding-bottom: 0;
 
-    &__wrapper {
+    &__title {
+      display: block;
       width: $screen-lg;
+      margin: 8px auto 75px auto;
       padding: 0 40px;
     }
 
+    &__section {
+      background-color: $gray-light;
+    }
+
+    &__section-container {
+      display: flex;
+      flex-wrap: wrap;
+      width: 1300px;
+      margin: 0 auto;
+      padding: 30px 40px 0 40px;
+    }
+
+    &__wrapper {
+      width: 570px;
+      margin: 0;
+      padding: 0;
+    }
+
     &__slider {
-      width: $screen-lg;
-      padding: 0 40px;
+      width: 570px;
+      margin: 0;
+      padding: 0;
+    }
+
+    &__inner {
+      flex-direction: column;
+      max-width: 430px;
+      margin: 0;
+    }
+
+    &__description {
+      margin: 41px 0 80px 0;
+      max-width: 433px;
+    }
+
+    &__fact-wrapper {
+      margin-bottom: 55px;
+    }
+
+    &__cost {
+      flex-direction: row;
+    }
+
+    &__cost-caption {
+      margin-right: 64px;
+    }
+
+    &__fact-caption::after {
+      background-color: $gray-light;
     }
   }
 }

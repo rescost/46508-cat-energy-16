@@ -15,7 +15,7 @@
   &__logo {
     display: block;
     text-align: center;
-    padding-bottom: 31px;
+    padding-bottom: 30px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 
@@ -27,7 +27,7 @@
     width: 100%;
     max-width: 320px;
     margin: 0 auto;
-    padding: 14px 0;
+    padding: 14px 0 15px 0;
   }
 
   &__credits-copyright {
@@ -38,6 +38,7 @@
 
   &__social-links {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0 10px 0 0;
   }
 }
 
@@ -48,7 +49,7 @@
       align-items: center;
       justify-content: space-between;
       width: $screen-md;
-      padding: 60px 30px;
+      padding: 52px 30px;
     }
 
     &__logo {
@@ -58,6 +59,7 @@
 
     &__social-links {
       border-bottom: none;
+      margin: 0 0 0 18px;
     }
 
     &__credits-link {

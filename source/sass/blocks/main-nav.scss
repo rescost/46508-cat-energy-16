@@ -82,7 +82,7 @@
     }
 
     &-item {
-      margin-right: 34px;
+      margin: 0 34px 0 0;
       border: none;
 
       &:last-child {
@@ -99,5 +99,23 @@
 
   .main-nav__list-link-index--active {
     border-bottom: 2px solid $color-white;
+  }
+
+  .main-nav {
+
+    &__list {
+      justify-content: flex-end;
+      font-size: $fontsize-biggest;
+      line-height: 25px;
+    }
+
+    &__list-item,
+    &__list-item:last-child {
+      margin: 0 0 0 35px;
+    }
+
+    &__list-link-index--active {
+      padding: 10px 0 5px 0;
+    }
   }
 }

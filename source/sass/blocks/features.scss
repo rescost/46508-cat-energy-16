@@ -170,8 +170,12 @@
 
 @media screen and (min-width: $screen-lg) {
   .features {
-    width: $screen-lg;
-    padding: 0 40px;
+    border-bottom: none;
+
+    &__wrapper {
+      width: $screen-lg;
+      padding: 0 40px;
+    }
 
     &__item {
       width: 245px;
@@ -180,6 +184,18 @@
       &:last-child {
         margin-right: 0;
       }
+
+      &--soluble::after {
+        left: 110px;
+      }
+
+      &--change::after {
+        left: 114px;
+      }
+    }
+
+    &__title {
+      margin-top: 75px;
     }
   }
 }

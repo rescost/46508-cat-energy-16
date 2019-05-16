@@ -8,30 +8,32 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__wrapper">
+    <div class="page-header__wrapper">
+      <div class="page-header__inner">
         <a class="page-header__logo" href="index.html">
           <picture>
             <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
-            <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
-            <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Кэт Энерджи - логотип" width="191" height="38">
-          </picture>
-        </a>
-        <button class="main-nav__button"><span class="visually-hidden">Откыть меню</span></button>
-      </div>
-      <nav class="main-nav">
-        <ul class="main-nav__list">
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-link" href="index.html">Главная</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-link main-nav__list-link--active" href="catalog.html">Каталог продукции</a>
-          </li>
-          <li class="main-nav__list-item">
-            <a class="main-nav__list-link" href="form.html">Подбор программы</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+                <img class="page-header__logo-img" src="img/logo-mobile.svg" alt="Кэт Энерджи - логотип" width="191" height="38">
+              </picture>
+            </a>
+            <button class="main-nav__button"><span class="visually-hidden">Откыть меню</span></button>
+          </div>
+          <nav class="main-nav main-nav--md main-nav--nojs">
+            <ul class="main-nav__list">
+              <li class="main-nav__list-item">
+                <a class="main-nav__list-link main-nav__list-link--active" href="index.html">Главная</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a class="main-nav__list-link" href="catalog.html">Каталог продукции</a>
+              </li>
+              <li class="main-nav__list-item">
+                <a class="main-nav__list-link" href="form.html">Подбор программы</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
     <main class="page-main">
       <section class="catalog">
         <h1 class="catalog__title">Каталог продукции</h1>
@@ -369,5 +371,6 @@
         </a>
       </div>
     </footer>
+    <script src="js/navigation-script.js"></script>
   </body>
 </html>

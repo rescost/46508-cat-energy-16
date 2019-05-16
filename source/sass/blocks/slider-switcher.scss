@@ -1,4 +1,5 @@
 .slider-switcher {
+  position: relative;
 
   &__img {
     display: block;
@@ -73,9 +74,68 @@
       left: 47px;
     }
 
+    &__button {
+      font-size: $fontsize-biggest;
+      padding-bottom: 3px;
+      border-bottom: 1px dashed $color-slider-border;
+    }
+
     &__toggles {
-      width: 569px;
-      padding-top: 350px;
+      width: 570px;
+      padding-top: 367px;
+
+      &::before {
+        width: 8px;
+        height: 8px;
+        top: 373px;
+        left: 281px;
+        border-radius: 4px;
+        background-color: $color-additional;
+      }
+
+      &::after {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        top: 360px;
+        left: 268px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+      }
+    }
+
+    &__toggles-range {
+      width: 428px;
+      height: 6px;
+      background-color: $gray-lightning;
+      border-radius: 3px;
+      margin-top: 7px;
+    }
+  }
+}
+
+@media screen and (min-width: $screen-lg) {
+  .slider-switcher {
+    min-height: 433px;
+
+    &__img-fat {
+      width: 677px;
+      height: 499px;
+      left: 15px;
+      top: -204px;
+    }
+
+    &__toggles {
+      margin-left: 80px;
+      padding-top: 338px;
+
+      &::before {
+        top: 345px;
+        left: 281px;
+      }
+
+      &::after {
+        top: 331px;
+      }
     }
   }
 }

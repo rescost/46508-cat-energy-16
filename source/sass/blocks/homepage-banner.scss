@@ -99,8 +99,9 @@
     &__button {
       width: 245px;
       margin: 0 0 0 89px;
-      padding: 17px 20px;
-      font-size: 20px;
+      padding: 16px 20px;
+      font-size: $fontsize-biggest;
+      line-height: 20px;
     }
   }
 }
@@ -119,13 +120,23 @@
       width: auto;
       height: 499px;
       position: absolute;
-      top: 10px;
-      left: 730px;
+      top: 20px;
+      left: 725px;
       z-index: -1;
     }
 
     &__title {
-      padding: 0 0 0 89px;
+      margin: 75px 0 44px 0;
+      padding: 0 0 0 80px;
+    }
+
+    &__description {
+      margin-bottom: 54px;
+      padding: 0 192px 0 80px;
+    }
+
+    &__button {
+      margin: 0 0 0 80px;
     }
   }
 }
